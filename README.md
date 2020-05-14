@@ -25,15 +25,17 @@ Intervalometer with serial interface based on Mega2560 MCU
 
 ## Schematic
 
+[PDF Schematic](altimeter_v2_schematic.pdf)
 
-
-![altimeter_photo](altimeter_v2_schematic.pdf)
+![altimeter_photo](altimeter_v2_schematic.png)
 
 ## Arduino code
 
-[altimeter_v2.ino](altimeter_v2.ino)
+[Arduino code](altimeter_v2.ino)
 
 ## PCB Design
+
+[KiCad PCB file](altimeter_v2.kicad_pcb)
 
 ![altimeter_photo](altimeter_v2.jpg)
 
