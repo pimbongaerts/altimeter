@@ -29,18 +29,26 @@ Intervalometer with serial interface based on Mega2560 MCU
 
 ![altimeter_photo](altimeter_v2_schematic.png)
 
+* Note: LP3966 on schematic replaced with [TL1963AKTTRG3](https://www.digikey.com/product-detail/en/texas-instruments/TL1963AKTTRG3/296-35958-1-ND/4135050) (has the same footprint)
+
 ## Arduino code
 
-[Arduino code](altimeter_v2.ino)
+[Arduino code](altimeter_v2.ino) (some features are currently commented out)
 
 ## PCB Design
 
-[KiCad PCB file](altimeter_v2.kicad_pcb)
+[KiCad PCB file](altimeter_v2.kicad_pcb) / [Bill of materials](altimeter_v2_bill.csv)
 
 ![altimeter_photo](altimeter_v2.jpg)
+
+* Note: footprint of the [XC1195CT-ND Crystal](https://www.digikey.com/product-detail/en/ecs-inc/ECS-327-12-5-17X-TR/XC1195CT-ND/827659) turned out to be incorrect, but could easily remedied with direct bridge to RTC pin
 
 ## Underwater housing
 
 ![altimeter_photo](altimeter_v2_ex2.jpg)
 
 Image shows board installed in a [BlueRobotics 2" watertight enclosure](https://bluerobotics.com/product-category/watertight-enclosures/), and with a 20x4 OLED display connected. On the left side, there are penetrators for an on/off switch, a [BlueRobotics Depth Sensor](https://bluerobotics.com/store/sensors-sonars-cameras/sensors/bar30-sensor-r1/), and 2 x [BlueRobotics Ping Sonar](https://bluerobotics.com/store/sensors-sonars-cameras/sonar/ping-sonar-r2-rp/) (although on the photo only one connected, hence the "error" on the top-right of the display). On the right side, there is an Ikelite connector to connect with the camera (power and trigger), another Ikelite connector for the 3-button remote (Remora), a penetrator for a cable connecting with the Dive-Xtras Piranha DPV battery, and a penetrator for the cable connecting with the [BluePrint Subsea X150 USBL](https://www.blueprintsubsea.com/pages/product.php?PN=BP00795).
+
+## Final notes
+
+Acknowledging John Atkins for all the design advice! Currently working on next iteration with SAMD51 integrated on the board (no external controller board required).
